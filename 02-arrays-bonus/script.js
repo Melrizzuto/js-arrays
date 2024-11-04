@@ -30,7 +30,7 @@ console.log(reversedTeachers);
 //     return teacher;
 //   }
 // }
-const longNames = [];
+let longNames = [];
 
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i].length >= 5) {

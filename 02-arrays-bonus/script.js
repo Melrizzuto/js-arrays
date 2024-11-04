@@ -30,7 +30,7 @@ console.log(reversedTeachers);
 //     return teacher;
 //   }
 // }
-let longNames = [];
+let longNames = []; // variabile di accumulo
 
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i].length >= 5) {
@@ -40,5 +40,8 @@ for (let i = 0; i < teachers.length; i++) {
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
-teachers.splice(5, 1);
+const index = teachers.indexOf('Ed')
+if (index !== -1) {
+  teachers.splice(index, 1);
+}
 console.log(teachers);
